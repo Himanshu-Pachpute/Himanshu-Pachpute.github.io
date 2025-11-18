@@ -7,201 +7,364 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <header>
         <nav>
-            <div class="logo">HP</div>
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                HP
+                <span class="logo-bracket">/&gt;</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="cta-button">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Himanshu Pachpute</h1>
-        <p>C++ Software Developer (CAD) | CAD Customization Specialist</p>
-        <div class="contact-info">
-            <a href="tel:+91 XXXXXXXXX">📞 +91 XXXXXXXXX</a>
-            <a href="mailto:himanshupachpute@gmail.com">✉️ himanshupachpute@gmail.com</a>
-            <a href="https://linkedin.com/in/himansh-pachpute" target="_blank">💼 LinkedIn</a>
-            <span>📍 Pune, India</span>
+        <div class="hero-content">
+            <div class="typing-container">
+                <span class="greeting">Hello, I'm</span>
+            </div>
+            <h1 class="glitch" data-text="Himanshu Pachpute">Himanshu Pachpute</h1>
+            <div class="subtitle-container">
+                <p class="subtitle">
+                    <span class="role-prefix">I'm a </span>
+                    <span class="typed-role"></span>
+                    <span class="cursor">|</span>
+                </p>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Major Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="90">0</span>
+                    <span class="stat-label">% Efficiency Boost</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
         </div>
     </section>
 
     <section id="about">
-        <h2>Professional Summary</h2>
-        <div class="summary-content">
-            With 3 years of experience in Microsoft Technologies and ProToolkit APIs for Creo Customization, I bring expertise in SDLC within Agile environments. I have a proven track record of delivering high-quality software products, training end users through clear documentation, and consistently meeting deadlines. Skilled in analysis, communication, and decision-making, I quickly adapt to new technologies and teams, ensuring seamless contributions.
+        <h2 class="section-title">
+            <span class="section-number"></span> About Me
+        </h2>
+        <div class="about-container">
+            <div class="about-content">
+                <p class="lead">With 3 years of experience in Microsoft Technologies and ProToolkit APIs for Creo Customization, I bring expertise in SDLC within Agile environments.</p>
+                <p>I have a proven track record of delivering high-quality software products, training end users through clear documentation, and consistently meeting deadlines. Skilled in analysis, communication, and decision-making, I quickly adapt to new technologies and teams, ensuring seamless contributions.</p>
+                <div class="highlight-box">
+                    <strong>Current Role:</strong> Solution Developer at Tata Technologies Ltd. (Onsite at Tata Motors)
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <div class="code-snippet">
+                        <code>
+                            <span class="keyword">class</span> <span class="class-name">Developer</span> {<br>
+                            &nbsp;&nbsp;<span class="property">name</span>: <span class="string">"Himanshu"</span>;<br>
+                            &nbsp;&nbsp;<span class="property">role</span>: <span class="string">"CAD Developer"</span>;<br>
+                            &nbsp;&nbsp;<span class="property">skills</span>: [<span class="string">"C++"</span>, <span class="string">"Creo"</span>];<br>
+                            &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">"Automation"</span>;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
+        <h2 class="section-title">
+            <span class="section-number"></span> Technical Arsenal
+        </h2>
+        <div class="skills-container">
+            <div class="skill-card" data-category="cad">
+                <div class="skill-icon">🎨</div>
                 <h3>CAD Customization</h3>
-                <ul>
-                    <li>Creo Parametric</li>
-                    <li>Creo UI Editor</li>
-                    <li>ProToolkit APIs</li>
-                </ul>
+                <div class="skill-items">
+                    <span class="skill-tag">Creo Parametric</span>
+                    <span class="skill-tag">Creo UI Editor</span>
+                    <span class="skill-tag">ProToolkit APIs</span>
+                </div>
+                <div class="skill-progress">
+                    <div class="progress-bar" data-progress="95"></div>
+                </div>
             </div>
-            <div class="skill-category">
+
+            <div class="skill-card" data-category="programming">
+                <div class="skill-icon">💻</div>
                 <h3>Programming</h3>
-                <ul>
-                    <li>C & C++ (STL, DSA)</li>
-                    <li>C#, .NET</li>
-                    <li>OpenCV</li>
-                </ul>
+                <div class="skill-items">
+                    <span class="skill-tag">C & C++</span>
+                    <span class="skill-tag">STL & DSA</span>
+                    <span class="skill-tag">C# .NET</span>
+                    <span class="skill-tag">OpenCV</span>
+                </div>
+                <div class="skill-progress">
+                    <div class="progress-bar" data-progress="90"></div>
+                </div>
             </div>
-            <div class="skill-category">
+
+            <div class="skill-card" data-category="software">
+                <div class="skill-icon">🛠️</div>
                 <h3>CAD Software</h3>
-                <ul>
-                    <li>Creo Parametric</li>
-                    <li>Autodesk Fusion 360</li>
-                    <li>Catia V5</li>
-                    <li>3DEXPERIENCE</li>
-                </ul>
+                <div class="skill-items">
+                    <span class="skill-tag">Creo Parametric</span>
+                    <span class="skill-tag">Fusion 360</span>
+                    <span class="skill-tag">Catia V5</span>
+                    <span class="skill-tag">3DEXPERIENCE</span>
+                </div>
+                <div class="skill-progress">
+                    <div class="progress-bar" data-progress="88"></div>
+                </div>
             </div>
-            <div class="skill-category">
-                <h3>PLM Software</h3>
-                <ul>
-                    <li>Siemens Teamcenter (TCE)</li>
-                    <li>Siemens Teamcenter (TCUA)</li>
-                </ul>
+
+            <div class="skill-card" data-category="plm">
+                <div class="skill-icon">📊</div>
+                <h3>PLM Systems</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Teamcenter TCE</span>
+                    <span class="skill-tag">Teamcenter TCUA</span>
+                </div>
+                <div class="skill-progress">
+                    <div class="progress-bar" data-progress="85"></div>
+                </div>
             </div>
-            <div class="skill-category">
+
+            <div class="skill-card" data-category="tools">
+                <div class="skill-icon">⚙️</div>
                 <h3>Development Tools</h3>
-                <ul>
-                    <li>Visual Studio</li>
-                    <li>Microsoft Azure DevOps</li>
-                    <li>Git & GitHub</li>
-                    <li>Kanban</li>
-                </ul>
+                <div class="skill-items">
+                    <span class="skill-tag">Visual Studio</span>
+                    <span class="skill-tag">Azure DevOps</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Kanban</span>
+                </div>
+                <div class="skill-progress">
+                    <div class="progress-bar" data-progress="92"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Professional Journey</h2>
-        <p style="text-align: center; color: #666; margin-bottom: 3rem;">
+        <h2 class="section-title">
+            <span class="section-number"></span> Project Showcase
+        </h2>
+        <div class="company-info">
             <strong>Tata Technologies Ltd.</strong> | Onsite Engineer at Tata Motors, Pimpri Plant<br>
             Solution Developer (June 2023 - Present) | Graduate Engineer Trainee (June 2022 - June 2023)
-        </p>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3 class="project-title">Design Rules Automation Application</h3>
-                    <p class="project-duration">June 2022 - Present</p>
-                    <div class="project-content">
-                        <ul>
-                            <li>Developed custom CAD application in Creo using Toolkit API & C++</li>
-                            <li>Prepared technical reports for comprehensive code understanding</li>
-                            <li>Operated in Agile environment with continuous adaptability</li>
-                            <li>Implemented architectural changes for design modifications</li>
-                            <li>Conducted thorough testing and crafted meticulous test cases</li>
-                            <li>Authored user guides for seamless end-user adoption</li>
-                        </ul>
-                    </div>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-badge">Featured</div>
+                <div class="project-number">01</div>
+                <h3>Design Rules Automation</h3>
+                <p class="project-duration">⏱️ June 2022 - Present</p>
+                <p class="project-description">Developed a sophisticated CAD application using Toolkit API & C++ to automate complex design rules, revolutionizing the workflow for Tata Motors Commercial Vehicles.</p>
+                <ul class="project-highlights">
+                    <li>Built custom CAD application in Creo</li>
+                    <li>Agile development methodology</li>
+                    <li>Comprehensive technical documentation</li>
+                    <li>End-user training and support</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-badge">C++</span>
+                    <span class="tech-badge">Creo API</span>
+                    <span class="tech-badge">Agile</span>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3 class="project-title">Automated Part Parameter Setting</h3>
-                    <p class="project-duration">3 Months</p>
-                    <div class="project-content">
-                        <ul>
-                            <li>Developed C++ application to autofill part parameters before saving</li>
-                            <li>Enabled users to select .txt files for seamless parameter updates</li>
-                            <li>Led rigorous testing with detailed test cases</li>
-                            <li>Created comprehensive technical documentation</li>
-                        </ul>
-                        <div class="impact">⚡ Impact: 87.5% time reduction (12 min → 1.5 min)</div>
-                    </div>
+            <div class="project-card">
+                <div class="project-number">02</div>
+                <h3>Automated Parameter Setting</h3>
+                <p class="project-duration">⏱️ 3 Months</p>
+                <p class="project-description">Revolutionary automation tool that eliminates manual parameter entry, saving critical time in the production pipeline.</p>
+                <ul class="project-highlights">
+                    <li>Smart file parsing and parameter mapping</li>
+                    <li>Seamless Creo integration</li>
+                    <li>Rigorous testing protocols</li>
+                </ul>
+                <div class="impact-badge success">
+                    <span class="impact-icon">⚡</span>
+                    <span class="impact-text">87.5% Time Saved</span>
+                    <span class="impact-detail">12min → 1.5min</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">C++</span>
+                    <span class="tech-badge">File I/O</span>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3 class="project-title">Automated Fasteners Selection Process</h3>
-                    <p class="project-duration">1 Month</p>
-                    <div class="project-content">
-                        <ul>
-                            <li>Developed C++ application to display suitable mating fasteners</li>
-                            <li>Enabled selection of primary fastener with automatic mating component identification</li>
-                            <li>Designed and executed detailed test cases</li>
-                            <li>Created user guides for simplified tool adoption</li>
-                        </ul>
-                        <div class="impact">⚡ Impact: 90% time reduction (10 min → 1 min)</div>
-                    </div>
+            <div class="project-card">
+                <div class="project-number">03</div>
+                <h3>Fastener Selection System</h3>
+                <p class="project-duration">⏱️ 1 Month</p>
+                <p class="project-description">Intelligent fastener matching system that dramatically reduces component selection time through smart automation.</p>
+                <ul class="project-highlights">
+                    <li>Automated component identification</li>
+                    <li>Real-time mating suggestions</li>
+                    <li>Intuitive user interface</li>
+                </ul>
+                <div class="impact-badge success">
+                    <span class="impact-icon">🚀</span>
+                    <span class="impact-text">90% Time Saved</span>
+                    <span class="impact-detail">10min → 1min</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">C++</span>
+                    <span class="tech-badge">Algorithm</span>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3 class="project-title">PLM Model Search & Screenshot Processing</h3>
-                    <p class="project-duration">6 Months</p>
-                    <div class="project-content">
-                        <ul>
-                            <li>Developing automation tool for PLM system model search</li>
-                            <li>Engineering image processing pipeline using OpenCV</li>
-                            <li>Processing over 1.36 million images for precise framing</li>
-                            <li>Integrated ExifFile for metadata editing</li>
-                            <li>Ensuring seamless display in Tata Motors' Edukaan app</li>
-                        </ul>
-                    </div>
+            <div class="project-card">
+                <div class="project-number">04</div>
+                <h3>PLM Screenshot Processor</h3>
+                <p class="project-duration">⏱️ 6 Months</p>
+                <p class="project-description">Large-scale automation system processing millions of images for Tata Motors' digital catalog.</p>
+                <ul class="project-highlights">
+                    <li>PLM system integration</li>
+                    <li>OpenCV image processing</li>
+                    <li>Metadata management</li>
+                    <li>Edukaan app integration</li>
+                </ul>
+                <div class="impact-badge info">
+                    <span class="impact-icon">📸</span>
+                    <span class="impact-text">1.36M Images</span>
+                    <span class="impact-detail">Processed</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">OpenCV</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">PLM</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="education">
-        <h2>Education</h2>
-        <div class="education-grid">
-            <div class="education-item">
-                <div>
-                    <h3>Bachelor of Engineering, Mechanical</h3>
-                    <p>Priyadarshini College of Engineering, Nagpur</p>
+        <h2 class="section-title">
+            <span class="section-number"></span> Academic Journey
+        </h2>
+        <div class="education-timeline">
+            <div class="education-card">
+                <div class="education-year">2022</div>
+                <div class="education-content">
+                    <h3>Bachelor of Engineering</h3>
+                    <p class="education-field">Mechanical Engineering</p>
+                    <p class="education-institute">Priyadarshini College of Engineering, Nagpur</p>
+                    <div class="grade-badge">First Class with Dictiction</div>
                 </div>
-                <div><strong>2022</strong></div>
-                <div><strong>First Class with Distinction</strong></div>
             </div>
-            <div class="education-item">
-                <div>
-                    <h3>Diploma in Engineering, Mechanical</h3>
-                    <p>Government Polytechnic, Nagpur</p>
+
+            <div class="education-card">
+                <div class="education-year">2019</div>
+                <div class="education-content">
+                    <h3>Diploma in Engineering</h3>
+                    <p class="education-field">Mechanical Engineering</p>
+                    <p class="education-institute">Government Polytechnic, Nagpur</p>
+                    <div class="grade-badge">First Class with Dictiction</div>
                 </div>
-                <div><strong>2019</strong></div>
-                <div><strong>First Class with Distinction</strong></div>
             </div>
-            <div class="education-item">
-                <div>
-                    <h3>10th (SSC)</h3>
-                    <p>Vidya Sadhana Convent, Nagpur</p>
+
+            <div class="education-card">
+                <div class="education-year">2016</div>
+                <div class="education-content">
+                    <h3>Secondary School (SSC)</h3>
+                    <p class="education-field">10th Standard</p>
+                    <p class="education-institute">Vidya Sadhana Convent, Nagpur</p>
+                    <div class="grade-badge">First Class with Dictiction</div>
                 </div>
-                <div><strong>2016</strong></div>
-                <div><strong>First Class with Distinction</strong></div>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2>Recognition</h2>
-        <div class="award-card">
-            🏆 Champion of the Month<br>
-            <span style="font-size: 1rem; display: block; margin-top: 1rem;">
-                Recognized for exceptional performance in developing and flawlessly implementing multiple tools 
-                that significantly enhanced operational efficiency and streamlined processes.
-            </span>
+    <section class="awards-section">
+        <h2 class="section-title">
+            <span class="section-number"></span> Recognition
+        </h2>
+        <div class="award-showcase">
+            <div class="award-icon">🏆</div>
+            <h3>Champion of the Month</h3>
+            <p>Recognized for exceptional performance in developing and flawlessly implementing multiple tools that significantly enhanced operational efficiency and streamlined processes at Tata Technologies.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">
+            <span class="section-number"></span> Let's Connect
+        </h2>
+        <div class="contact-container">
+            <div class="contact-text">
+                <p class="contact-lead">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="tel:+91XXXXXXXXXX" class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h4>Phone</h4>
+                    <p>+91 XXXXXXXXXX</p>
+                </a>
+                <a href="mailto:himanshupachpute@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h4>Email</h4>
+                    <p>himanshupachpute@gmail.com</p>
+                </a>
+                <a href="https://linkedin.com/in/himansh-pachpute" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h4>LinkedIn</h4>
+                    <p>Connect with me</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h4>Location</h4>
+                    <p>Pune, India</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2024 Himanshu Pachpute. All rights reserved.</p>
-        <p style="margin-top: 0.5rem;">Languages: English (Professional) | Hindi (Bilingual) | Marathi (Native)</p>
+        <div class="footer-content">
+            <p class="footer-text">Designed & Built by Himanshu Pachpute</p>
+            <p class="footer-languages">🗣️ English (Professional) | Hindi (Bilingual) | Marathi (Native)</p>
+            <p class="footer-copyright">© 2024 All rights reserved</p>
+        </div>
+        <button class="scroll-top" aria-label="Scroll to top">↑</button>
     </footer>
 
     <script src="script.js"></script>
