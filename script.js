@@ -67,6 +67,12 @@ function typeRole() {
         charIndex++;
     }
     
+    // Always append cursor at the end
+    const cursor = document.createElement('span');
+    cursor.className = 'cursor';
+    cursor.textContent = '|';
+    typedRole.appendChild(cursor);
+    
     if (!isDeleting && charIndex === currentRole.length) {
         setTimeout(() => isDeleting = true, pauseTime);
     } else if (isDeleting && charIndex === 0) {
