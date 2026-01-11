@@ -181,6 +181,7 @@ button, a, input, textarea, select {
     min-width: 44px;
     min-height: 44px;
     touch-action: manipulation;
+    -webkit-user-select: none;
     user-select: none;
     transition: all 0.3s ease;
     box-shadow: 0 2px 10px rgba(0, 212, 255, 0.3);
@@ -517,6 +518,7 @@ nav {
     min-height: 44px;
     min-width: 100px;
     touch-action: manipulation;
+    -webkit-user-select: none;
     user-select: none;
     border: none;
     cursor: pointer;
